@@ -1,2 +1,7 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^mycoopshop.com [NC]
+RewriteRule ^(.*)$ http://www.mycoopshop.com/$1 [L,R=301]
+
 ErrorDocument 404 /not_found.html
+
 ErrorDocument 500 /internal_server_error.html
